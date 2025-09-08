@@ -1,9 +1,10 @@
 services:
   qa:
     build:
-      context: ../..                      # repo root (relative to this file)
+      context: ../..                      # repo root
       dockerfile: deployments/docker/Dockerfile
     env_file:
-      - env/.env                          # still relative to compose file
+      - env/.env                          # set CRON_EXPR, TZ here
     working_dir: /app
     tty: true
+    restart: unless-stopped
