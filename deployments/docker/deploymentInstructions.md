@@ -6,3 +6,8 @@ Double check logs
 
 Stop
 `docker compose -f deployments/docker/docker-compose.yml down`
+
+_Doesn't work_ ? Try running this first:
+```sh
+deployments/docker/entrypoint.sh
+```
