@@ -2,8 +2,18 @@
 .env
 *.env
 **/.env
+**/**/.env
+**/**/env/.env
+
 
 # Python cache
 __pycache__/
 apps/__pycache__/
 *.pyc
+
+# Local logs
+logs/
+
+#DS_Store
+.DS_Store
+/scripts/DS_Store
