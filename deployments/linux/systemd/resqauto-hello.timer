@@ -1,0 +1,12 @@
+[Unit]
+Description=Schedule ResQAuto Hello world
+
+[Timer]
+# Choose ONE schedule (comment the other):
+OnCalendar=Mon 12:00            # weekly, every Monday at 12:00
+# OnCalendar=*-*-01 12:00:00     # monthly, 1st day at 12:00
+
+Persistent=true
+
+[Install]
+WantedBy=timers.target
