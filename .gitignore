@@ -7,3 +7,6 @@
 __pycache__/
 apps/__pycache__/
 *.pyc
+
+# Local logs
+logs/

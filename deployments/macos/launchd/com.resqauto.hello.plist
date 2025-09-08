@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+ "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+ <dict>
+  <key>Label</key><string>com.resqauto.hello</string>
+
+  <!-- Run the Python module from your repo -->
+  <key>ProgramArguments</key>
+  <array>
+    <string>__REPO_ABS_PATH__/scripts/macos/launchd_entry.sh</string>
+  </array>
+
+  <!-- Ensure Python can import 'apps' and run from repo -->
+  <key>WorkingDirectory</key><string>__REPO_ABS_PATH__</string>
+
+  <!-- Choose ONE schedule (weekday/day) -->
+  <key>StartCalendarInterval</key>
+  <array>
+    <!-- Weekly: Monday 12:00 -->
+    <dict>
+      <key>Weekday</key><integer>2</integer> <!-- Apple: 1=Sunday, 2=Monday -->
+      <key>Hour</key><integer>12</integer>
+      <key>Minute</key><integer>11</integer>
+    </dict>
+
+    <!-- Monthly: 1st at 12:00 -->
+    <!--
+    <dict>
+      <key>Day</key><integer>1</integer>
+      <key>Hour</key><integer>12</integer>
+      <key>Minute</key><integer>0</integer>
+    </dict>
+    -->
+  </array>
+
+  <key>StandardOutPath</key><string>__REPO_ABS_PATH__/logs/hello.out.log</string>
+  <key>StandardErrorPath</key><string>__REPO_ABS_PATH__/logs/hello.err.log</string>
+ </dict>
+</plist>
