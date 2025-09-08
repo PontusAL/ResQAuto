@@ -19,9 +19,9 @@
   <array>
     <!-- Weekly: Monday 12:00 -->
     <dict>
-      <key>Weekday</key><integer>2</integer> <!-- Apple: 1=Sunday, 2=Monday -->
-      <key>Hour</key><integer>12</integer>
-      <key>Minute</key><integer>11</integer>
+      <key>Weekday</key><integer>1</integer> <!-- regularly Apple: 1=Sunday, 2=Monday, but I have Monday=1 Sunday might be 0 or 7, to decide later -->
+      <key>Hour</key><integer>15</integer>
+      <key>Minute</key><integer>41</integer>
     </dict>
 
     <!-- Monthly: 1st at 12:00 -->

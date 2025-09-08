@@ -10,3 +10,7 @@ apps/__pycache__/
 
 # Local logs
 logs/
+
+#DS_Store
+.DS_Store
+/scripts/DS_Store
